@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <title>Sim</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="JS/index.js"></script>
+
+
+</head>
+
+
+<body onload="Init()">
+    <div id="Container">
+        <div id="Header">
+            <div id="Wrap1">
+                <div id="EditDangerZ">
+                    <label id="WidL" for="wid">width</label>
+                    <input onchange="ChangeDangerZ()" type="range" name="wid" id="Wid" min="1">
+                    <label id="HiL" for="hi">hight </label>
+                    <input onchange="ChangeDangerZ()" type="range" name="hi" id="Hi" min="1">
+                    <label id="PosStartXL" for="startx">X Start</label>
+                    <input onchange="ChangeDangerZ()" type="range" name="startx" id="PosStartX" min="0" value="0">
+                    <label id="PosStartYL" for="startY">Y Start</label>
+                    <input onchange="ChangeDangerZ()" type="range" name="starty" id="PosStartY" min="0" value="0">
+                    
+                </div>
+                <div id="Population">
+                    <label for="amount"> insert amount:</label>
+                    <input type="number" name="amount" id="amountIN" min="0" placeholder="amount?..">
+                    <label for="radius"> insert radius:</label>
+                    <input onchange="ChangeRadiusInput()" type="number" name="radius" id="radiusIN" min="0" placeholder="radius?..">
+                 
+
+                </div>
+                <div id="simsett">
+                    <label for="Epochs"> Generations(Epochs):</label>
+                    <input onchange="onChangeEpochs(this)"  type="number" name="Epochs" id="EpochsIN" min="1" placeholder="Epochs?..">
+                    <button onclick="TrainBtn()">GO Train</button>
+                </div>
+            </div>
+
+        </div>
+        <div id="chartContainer">
+
+        </div>
+        <div id="InfoContainer">
+            <div id="InfoContent">
+                <p id="numofpopP">Population: 0</p>
+                <p id="GenEpocP">Epochs: 0</p>
+                <a onclick="DisplayBar()">Show Bar</a><br>
+                <a onclick="DisplayGraph()">Show Graph</a>
+            </div>
+         
+            <div id="Epoc-PH">
+                <hr>
+             
+             
+            </div>
+        </div>
+        <div id="CanvasContainer">
+            <canvas id="MyCan">
+
+            </canvas>
+        </div>
+    </div>
+    
+</body>
+</html>

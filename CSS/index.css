@@ -1,0 +1,126 @@
+body{
+    background-color: black;
+}
+*{
+    color: rgb(19, 134, 19);
+}
+#Header {
+    border: green 2px solid;
+    margin-bottom: 0.5%;
+    height: 9vh;
+    padding: 1vh;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#Header button {
+    font-size: 2vh;
+    padding: 1vh;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-image: linear-gradient(125deg, rgba(193, 206, 77, 0.795),rgba(221, 126, 63, 0.849));
+    border-radius: 35%;
+    color: black;
+}
+#Header button:hover {
+    background-image: linear-gradient(280deg, rgb(77, 206, 109),rgb(76, 221, 63));
+    border: 1px gold solid;
+    cursor: pointer;
+    
+
+
+}
+#EditDangerZ{
+   
+    left: 0;
+}
+#EditDangerZ input,#Population input,#simsett input{
+    text-align: center;
+    font-size: 1.75vh;
+    width: 6vw;
+    border-radius: 10%;
+    
+}
+#EditDangerZ label,#Population label,#simsett label{
+    
+    font-size: 1.55vh;
+ 
+    
+}
+#EditDangerZ input:hover,#Population input:hover,#simsett input:hover{
+    background-color: beige;
+}
+#Wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#CanvasContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#MyCan {
+    background-color: beige;
+    /* width: 50vw;
+    height: 50vw; */
+    border: green 2px solid;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#InfoContainer{
+    position: absolute;
+}
+#InfoContainer hr{
+    border: 1px solid #175017;
+    width: 100%;
+}
+#InfoContent p {
+    font-size: 2vw;
+}
+#Epoc-PH p {
+    font-size: 1.25vw;
+}
+#Epoc-PH  {
+    overflow: auto;
+    overflow-x: hidden;
+    width: 120%;
+    height: 50vh;
+}
+#chartContainer{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    height: 75vh; 
+    width: 75vw;
+    left: 12.5vw;
+}
+#InfoContainer a {
+    cursor: pointer;
+    font-size: 1.2vw;
+}
+#InfoContainer a:hover {
+    cursor: pointer;
+    font-size: 1.66vw;
+    color: #88e688;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(84, 151, 53, 0.822); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #184614; 
+  }
